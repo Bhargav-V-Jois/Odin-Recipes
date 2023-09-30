@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Odin Recipes.</title>
+    </head>
+    <body>
+        <div class="heading">
+            <h1 onclick="showRecipe(0)">Odin Recipes</h1>
+            <div class="settings">
+                <label for="diet">Chose Diet Type:</label>
+                <select name="diet" id="diet">
+                    <option value="vegitarian">Vegitarian</option>
+                    <option value="non-vegitarian">Non-Vegitarian</option>
+                </select>
+                <label for="cate">Chose Category:</label>
+                <select name="cate" id="cate">
+                    <option value="dessert">Dessert</option>
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+            </div>
+        </div>
+        <p><i>Find some of the most delicious <em>Dishes</em> on the web.</i></p>
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="recipes"></div>
+
+        <div id="blocker" class="blocker" onclick="hidePopup()"></div>
+
+        <div id="recipe-details">
+        </div>
+
+        <p><small>Filter <strong>May or May Not Work</strong> depending on the number of dishes available in that category.</small></p>
+        <p>Created by Bhargav using <a href="spoonacular.com">Spoonacular</a></p>
+        <script src="app.js"></script>
+    </body>
+</html>
