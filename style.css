@@ -174,3 +174,25 @@ li > strong{
     background: rgba(0,0,0,.5);
     display: none;
 }
+
+@media only screen and (max-width: 750px) {
+    *{
+        font-size: 0.6em;
+        text-align: center;
+    }
+    .recipe-image{
+        height: 150px;
+    }
+    .recipe-card{
+        width: 90%;
+        height: 200px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .recipe-card h2{
+        height: 30px;
+    }
+    .detail-card > img{
+        width: 100%;
+    }
+}
