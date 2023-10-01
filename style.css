@@ -195,4 +195,10 @@ li > strong{
     .detail-card > img{
         width: 100%;
     }
+    .settings{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
 }
